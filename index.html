@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvers Paradox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8fd4f89c92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="topnav">
+        <div id="brand-logo">
+            <i class="fa-solid fa-lightbulb" id="logo-icon"></i>
+            <p>Solvers</p><span>Paradox</span>
+            
+        </div>
+        <ul id="links">
+            <button id="light-dark-switch" onclick="toggleMode()" tabindex="1"><i class="fa-solid fa-sun" id="switch-img"></i></button>
+            <li tabindex="2" onclick="goto('main-section')"><i class="fa-solid fa-house"></i>  Home</li>
+            <li tabindex="3" onclick="goto('about-section')"><i class="fa-solid fa-quote-left"></i>  About</li>
+            <li tabindex="4" onclick="goto()"><i class="fa-solid fa-message"></i>  Contact</li>
+            <li tabindex="5"><i class="fa-solid fa-calculator"></i>  Calcs</li>
+        </ul>
+    </nav>
+    <div id="main-section" class="section">
+        <div align="center">
+            <h1>Solving problems of the world daily</h1>
+        <p>Solve mathematical problems effortlessly using our calculators.</p>
+            <button tabindex="6" class="main-btns" id="main-btn" style="background-color: black; color: white; border: 2px solid white;">Solve</button> <button class="main-btns" tabindex="7">Sign up</button>
+        </div>
+        
+    </div>
+    <div id="about-section" class="section" align="center">
+        <div align="center" style="width: 70%;">
+            <h1>About us</h1>
+            <p>This website was made by us as a project and we work really hard to keep it maintained.
+                We would really appreciate your feedback and suggestions to improve our site.
+                With this website you can download our programs and learn from them. The effort we have put in this is very great and your appreciation is our success</p>
+        </div>
+
+    </div>
+    <h1 align="center" style="font-size: 60px;">Contact</h1>
+    <div id="contact-section" class="section" align="center">
+            <div id="email-div" class="contact-div" onclick="go('https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXmSzJrKcknlwDZRXkCBmrVBGfMBCZtFrwhBBdZdgFlcKLsRjZJGGKGXGWSFLLXLvztgSH')">
+            </div>
+            <div id="discord-div" class="contact-div" onclick="go('https://discord.gg/MuyffJ7QJM')">
+            </div>
+
+    </div>
+<script>
+    modeLight = document.body
+    links = document.getElementsByTagName('a')
+    btn = document.getElementById('switch-img')
+    asdf = document.getElementById('main-btn')
+    function toggleMode(){
+        btn.classList.toggle('fa-moon')
+        modeLight.classList.toggle('light-dark-mode')
+        links.classList.toggle('light-dark-mode')
+        asdf.classList.toggle('light-dark-mode')
+    }
+    function goto(id){
+        document.getElementById(id).scrollIntoView()
+    }
+    function go(url){
+        window.open(url)
+    }
+</script>
+</body>
+</html>

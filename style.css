@@ -1,0 +1,132 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#topnav {
+    display: flex;
+    height: 5rem;
+    box-shadow: 1px 1px 100px 5px gray;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    backdrop-filter: blur(10px);
+}
+#links {
+    height: 5rem;
+    display: flex;
+    width: 50%;
+    justify-content:flex-end;
+    align-items: center;
+}
+#brand-logo {
+    width: 50%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.light-dark-mode {
+    color: white;
+    background: black;
+}
+
+#light-dark-switch {
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    padding-top: 6em;
+    width: 100%;
+    height: 80vh;
+}
+.contact-div {
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+#discord-div {
+    background-image: url('discord.png');
+    border-radius: 1000px;
+}
+#email-div {
+    background-image: url('gmail.png');
+}
+#contact-section h1 {
+    font-size: 60px;
+}
+#about-section h1{
+    font-size: 60px;
+}
+#contact-section h2 {
+    font-size: 30px;
+}
+#main-section h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+#logo-icon {
+    font-size: 30px;
+    padding-left: 10px;
+    margin-left: 40px;
+}
+#brand-logo p {
+    margin-left: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(9, 180, 9);
+}
+#brand-logo span {
+    font-weight: bold;
+}
+.main-btns {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#links li {
+    list-style: none;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+#switch-img {
+    border-radius: 100px;
+}
+#links li i {
+    padding-right: 10px;
+    font-size: 20px
+}
+#links li:hover {
+    background-color: rgba(000, 000, 000, 40%);
+}
+#links li:hover {
+    color: white;
+}

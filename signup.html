@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Solvers Paradox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8fd4f89c92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="topnav">
+        <div id="brand-logo">
+            <i class="fa-solid fa-lightbulb" id="logo-icon"></i>
+            <p>Solvers</p><span>Paradox</span>
+            
+        </div>
+        <ul id="links">
+            <button id="light-dark-switch" onclick="toggleMode()" tabindex="1"><i class="fa-solid fa-sun" id="switch-img"></i></button>
+            <li tabindex="2" onclick="go('index.html')"><i class="fa-solid fa-house"></i>  Home</li>
+            <li tabindex="5"><i class="fa-solid fa-comments"></i>  Discussion</li>
+        </ul>
+    </nav>
+    <div id="center-div">
+        <div id="signup-div">
+            <h1>Sign up</h1>
+            <form name="SignUp" method="POST" data-netlify="true">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Sign Up</button>
+            </form>
+
+        </div>
+    </div>
+
+<script>
+        modeLight = document.body
+    btn = document.getElementById('switch-img')
+    function toggleMode(){
+        btn.classList.toggle('fa-moon')
+        modeLight.classList.toggle('light-dark-mode')
+    }
+       function goto(id){
+        document.getElementById(id).scrollIntoView()
+    }
+    function go(url){
+        window.open(url, "_self")
+    }
+</script>
+</body>
+</html>

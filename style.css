@@ -218,4 +218,6 @@
 .backgroundimg{
     background-image: url("bg.jpg");
     background-origin: initial;
+    background-repeat: no-repeat;
+    background-size: auto;
 }

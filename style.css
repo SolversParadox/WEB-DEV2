@@ -216,9 +216,6 @@
 }
 
 .goldtxt {
-   position: absolute;
-   font-family: 'Times New Roman',serif;g
-   font-weight: bold;
    background-image: linear-gradient(
 	to right,
 	#462523 0,
@@ -230,5 +227,4 @@
 	#462523 100%
 	);
    color:transparent;
-   -webkit-background-clip:text;
 }

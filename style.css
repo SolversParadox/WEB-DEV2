@@ -216,6 +216,7 @@
 }
 
 .goldtxt {
+   color: transparent;
    background-image: linear-gradient(
 	to right,
 	#462523 0,

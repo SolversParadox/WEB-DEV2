@@ -215,3 +215,6 @@
     cursor: pointer;
 }
 
+.backgroundimg{
+    background-image: bg.jpg;
+}

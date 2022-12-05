@@ -216,6 +216,6 @@
 }
 
 .backgroundimg{
-    background-image: url(bg.jpg);
+    background-image: url("bg.jpg");
     background-origin: initial;
 }
